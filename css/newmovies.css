@@ -1,0 +1,104 @@
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	background: #DCDCDC;
+	color: #999;
+	line-height: 1.5;
+}
+.container {
+	max-width: 100%;
+	margin: auto;
+}
+header {
+  text-align: center;
+  color: #33bfd0;
+  text-transform: uppercase;
+}
+
+header nav {
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+ul {
+	font-family: 'Oxygen', sans-serif;
+	color: #582235;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ol {
+	font-family: 'Oxygen', sans-serif;
+}
+a {
+	transition: color 0.3s ease-out;
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font-size: 3em;
+	text-align: center;
+	font-weight: 500;
+	color: #333;
+}
+.leftcolumn { 
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.img {
+  height: 90%;
+  width: 90%;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+.sideimg {
+	height: 100%;
+	width: 100%;
+}
+h2 {
+	color: black;
+	font-size: 1.9em;
+}
+h5 {
+	color: #800000;
+	font-size: .9em;
+}
+p{
+	font-family: 'Oxygen', sans-serif;
+	color: black;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 2%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}

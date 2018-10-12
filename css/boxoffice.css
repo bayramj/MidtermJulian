@@ -1,0 +1,120 @@
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	background: #DCDCDC;
+	color: #999;
+	line-height: 1.5;
+}
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+a {
+	transition: color 0.3s ease-out;
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font-size: 3em;
+	text-align: center;
+	font-weight: 500;
+	color: #333;
+}
+header {
+	text-align: center;
+	color: #33bfd0;
+	text-transform: uppercase;
+}
+header nav {
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+}
+header nav li {
+	margin: 0 15px;
+	display: inline-block;
+}
+ul {
+	font-family: 'Oxygen', sans-serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+}
+tbody {
+	color: #000;
+	line-height: 1.25;
+}
+caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+	color: black;
+	padding-top: 1.4em;
+}
+.grow {
+	transition: all .1s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.5);
+}
+table tr {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	padding: .35em;
+}
+table th, table td {
+	padding: .625em;
+	text-align: center;
+}
+table th {
+	font-size: .85em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	color: #00ced1;
+}
+
+@media screen and (max-width: 600px) {
+table {
+	border: 0;
+}
+table caption {
+	font-size: 1.3em;
+}
+table thead {
+	border: none;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+table tr {
+	border-bottom: 3px solid #ddd;
+	display: block;
+	margin-bottom: .625em;
+}
+table td {
+	border-bottom: 1px solid #ddd;
+	display: block;
+	font-size: .8em;
+	text-align: right;
+}
+table td::before {
+	content: attr(data-label);
+	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+table td:last-child {
+	border-bottom: 0;
+}
